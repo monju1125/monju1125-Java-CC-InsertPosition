@@ -1,4 +1,4 @@
-
+import java.util.Collection;
 
 public class InsertPosition {
 
@@ -16,12 +16,12 @@ public class InsertPosition {
      */
     public int searchInsert(int[] nums, int target) {
 
-        for(int i =0; i < nums.length -1; i++){
-            if ( target > nums[i] &&  target < nums[i+1]  ) {
+        for(int i =0; i < nums.length; i++){
+            if ( target <= nums[i] ) {
                 return i;
             }
         }
 
-        return -1;
+        return nums.l;
     }
 }
